@@ -2,8 +2,14 @@
     font-family: 'AppleGothic';
     src: url(Windows/Fonts/a네모의꿈.ttf) format('truetype');
 }
+
+@font-face{
+    font-family: 'appleSDGothic';
+    src: url('../fonts/AppleSDGothicNeoUL.ttf');
+}
+
 body {
-    font-family: AppleGothic;
+    font-family: 'appleSDGothic';
     margin: 0;
     padding: 0;
 }

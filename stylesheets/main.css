@@ -23,11 +23,69 @@ body{
 .btn{
     display: block;
     font-family: 'appleSDGothic';
-    font-size: 40px !important;
+}
+
+.btndiv{
+    margin-left: 110px;
+}
+
+.btndiv.bottom{
+    margin-top: 50px;
+}
+
+.btndiv .btn{
+    font-size: 30px !important;
     width: 400px;
+    height: 80px;
+    line-height: 65px;
+}
+
+a .btn{
+    width: 200px;
+    font-size: 20px !important;
+}
+
+.gsm.fixed-bottom{
+    left: auto;
+    padding: 20px;
+    width: 130px !important;
 }
 
 .fixed-bottom{
-    left: auto;
+    font-family: 'appleSDGothic';
+    color: white;
     padding: 20px;
+    font-size: 20px;
+    width: 300px !important;
 }
+
+a:link {
+    text-decoration: none !important;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none !important;
+    color: rgb(216, 216, 216) !important;
+}
+
+a:active{
+    text-decoration: none !important;
+    color: white;
+}
+
+a:visited{
+    text-decoration: none !important;
+    color: white;
+}
+
+.alertdiv{
+    font-size: 16px !important;
+    width: 400px !important;
+    margin-left: 230px;
+}
+
+.alert{
+    margin-bottom: 5px !important;
+}
+
