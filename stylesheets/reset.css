@@ -95,7 +95,11 @@ span {
     margin: 0;
 }
 .col-form-label {
+    text-align: center;
     padding: calc(.375rem + 1px) 0px !important;
+}
+.form-group .place-label,.form-group .date-label{
+    justify-content: center;
 }
 .col-sm-9,
 .col-sm-3,
@@ -158,10 +162,10 @@ thead {
 }
 .table thead td {
     padding: .35rem .5rem;
-/*    font-size: 15px;*/
+    font-size: 17px;
 }
 tbody {
-    font-size: 13px;
+    font-size: 14px;
 }
 .title{
     width: 350px;
@@ -199,9 +203,14 @@ tr {
     display: flex;
     align-items: flex-end;
 }
+
+.content-delete{ 
+    position: absolute;
+    display: block;;
+}
 .classification>.row{
     width: 100%;
-    font-size: 15px;
+    font-size: 17px;
 }
 .classification>.row>.col-3{
     font-weight: bold
@@ -210,11 +219,12 @@ tr {
     margin-bottom: 10px;
 }
 .add{
-    font-size: 13px;
+    font-size: 15px;
     margin: 15px 0px;
     color: #3B7BC4;
     line-height: 25px;
 }
+
 .reply{
     margin-top: 40px;
 }
@@ -325,11 +335,13 @@ textarea.form-control{
     border-bottom: 1px solid #707070;
 }
 .close {
+    display: flex;
     font-weight: 100;
     padding: 0.35rem 1rem !important;
     margin: -1rem -1rem -1rem !important;
 }
 .close>span{
+    align-self: center;
     font-size: 50px;
     color: #3B7BC4;
 }
