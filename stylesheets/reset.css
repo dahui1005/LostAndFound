@@ -321,7 +321,7 @@ textarea.form-control{
     padding-top: 15px;
 }
 .pagination{
-    margin: 100px 0px 70px;
+    margin: 70px 0px 30px;
     justify-content: center;
 }
 .page-item.active .page-link {
