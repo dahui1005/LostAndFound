@@ -52,7 +52,8 @@
                 </div>
                 <div class="col date-search">
                     <div class="form-group row">
-                        <label for="input" class="col-sm-3 col-form-label">날짜</label>
+<!--                       클래스 추가했심덩-->
+                        <label for="input" class="col-sm-3 col-form-label date-label">날짜</label>
                         <div class="col-sm-9">
                             <input class="form-control" type="text" name="datefilter" value="" />
 
@@ -76,7 +77,8 @@
                 </div>
                 <div class="col place-search">
                     <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label">장소</label>
+                       <!--                       클래스 추가했심덩-->
+                        <label for="" class="col-sm-3 col-form-label place-label">장소</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" id="">
                         </div>
@@ -116,8 +118,11 @@
                 <div class="hiddenRow">
                     <div class="container">
                         <div class="article">
-                            <div class="row">
+                           
+                            <div class="row">                                    
                                 <div class="col-5"><img class="img-thumbnail img-fluid" src="images/seng.jpg" alt=""></div>
+                                <div class="content-delete">
+<!--                                <button class="content-delete-btn btn">글삭하기</button></div>-->
                                 <div class="col classification">
                                     <div class="row">
                                         <div class="col-3">
@@ -138,12 +143,13 @@
                             </div>
                             <div class="add">안냐쉽까 저는 얼마전에 마이크를 주웠습니다. 보시다시피 꺼멍색 c타입 akg 이어폰이구요
                                 그 갤럭시 사면 주는 그거 인것같습니다 그리고 그 제가얼마전에 이어폰을잃어버렸는데 주인없으면 제가 먹도록 하겠습니다.하지만 먹히고싶지 않으시다면 꼭 저에게 찾아와주시기 바랍니다. 사실 그럴필요까진 없고그냥 댓글달아주세요 네,,,,,.!!!!!</div>
+                                
                         </div>
                         <div class="form-group reply"><span style="margin-right: 15px; font-size: 15px; font-weight: bold">앗, 내꺼인가?</span>
                             <label style="line-height: 27px; margin-bottom: 0px;">
                                 <div style="display: inline" class="custom-control custom-checkbox">
-                                    <input style="margin-right: 0px;" type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label style="font-size: 12px;" class="custom-control-label" for="customCheck1">비밀댓글 남기기<img src="images/lock%20(1).png" width="19px" style="margin-bottom: 10px"></label>
+                                    <input style="margin-right: 0px;" type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label style="font-size: 12px;" class="custom-control-label" for="customCheck2">비밀댓글 남기기<img src="images/lock%20(1).png" width="19px" style="margin-bottom: 10px"></label>
                                 </div>
                             </label>
                             <div class="reply-input row">
@@ -175,20 +181,59 @@
                             <li class="list-group-item even">
                                 <div class="user-set">
                                     <div class="user"><img src="images/reply2.png" width="25px" style="margin-right: 5px;">오세영</div>
+                                    <div class="set">
+<!--                                       대댓글달기 인풋 넣었습니당근데 이것도 href와 id연결 달라야하겠습니당-->
+                                        <span class="re-re" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">답글</span>
+                                    </div>
                                 </div>
                                 <div class="reply-contents">우와~~~ 뭐라는거야?? 그게 뭐에용 ?????</div>
+<!--                                대댓글 달기 인풋 바로 이곳에요-->
+                                <div class="collapse" id="collapseExample1">
+                                <div class="form-group re-reply-input">
+                                    <label style="line-height: 27px; margin-bottom: 0px;">
+                                        <div style="display: inline" class="custom-control custom-checkbox">
+                                            <input style="margin-right: 0px;" type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label style="font-size: 12px;" class="custom-control-label" for="customCheck3">비밀댓글 남기기<img src="images/lock%20(1).png" width="19px" style="margin-bottom: 10px"></label>
+                                        </div>
+                                    </label>
+                                    <div class="reply-input row">
+                                        <div class="col-10">
+                                            <textarea class="form-control reply-space" placeholder="댓글을 남겨주세요."></textarea></div>
+                                        <div class="col">
+                                            <button type="button" class="col btn btn-reply">댓글 등록</button></div>
+                                    </div>
+                                </div>
+                            </div>
                             </li>
+                            
                             <li class="list-group-item odd re-reply row">
                                 <div class="col-1"><img src="images/%EA%B7%B8%EB%A3%B9%2020.png" width="25px" class="re-re-img"></div>
                                 <div class="re-re-contents col">
                                     <div class="user-set">
                                         <div class="user"><img src="images/reply.png" width="25px" style="margin-right: 5px;">임다희</div>
                                         <div class="set">
-                                            <span class="re-re">답글</span>
-                                            <span class="reply-delete">삭제</span>
+                                            <span class="re-re"  data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">답글</span>
+<!--                                            모달 달면 코드 더생기니깐 간단하게 얼러트로 합시다-->
+                                            <span class="reply-delete" onclick="alert('댓글을 삭제합니다.')">삭제</span>
                                         </div>
                                     </div>
                                     <div class="reply-contents">우와~~~ 뭐라는거야?? 그게 뭐에용 ?????</div>
+                                    <div class="collapse" id="collapseExample2">
+                                <div class="form-group re-reply-input">
+                                    <label style="line-height: 27px; margin-bottom: 0px;">
+                                        <div style="display: inline" class="custom-control custom-checkbox">
+                                            <input style="margin-right: 0px;" type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label style="font-size: 12px;" class="custom-control-label" for="customCheck4">비밀댓글 남기기<img src="images/lock%20(1).png" width="19px" style="margin-bottom: 10px"></label>
+                                        </div>
+                                    </label>
+                                    <div class="reply-input row">
+                                        <div class="col-10">
+                                            <textarea class="form-control reply-space" placeholder="댓글을 남겨주세요."></textarea></div>
+                                        <div class="col">
+                                            <button type="button" class="col btn btn-reply">댓글 등록</button></div>
+                                    </div>
+                                </div>
+                            </div>
                                 </div>
                             </li>
                             <li class="list-group-item even re-reply row">
@@ -197,11 +242,27 @@
                                     <div class="user-set">
                                         <div class="user"><img src="images/reply2.png" width="25px" style="margin-right: 5px;">임다희</div>
                                         <div class="set">
-                                            <span class="re-re">답글</span>
-                                            <span class="reply-delete">삭제</span>
+                                            <span class="re-re"  data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">답글</span>
+                                            <span class="reply-delete" onclick="alert('댓글을 삭제합니다.')">삭제</span>
                                         </div>
                                     </div>
                                     <div class="reply-contents">조용히좀 하세용</div>
+                                    <div class="collapse" id="collapseExample3">
+                                <div class="form-group re-reply-input">
+                                    <label style="line-height: 27px; margin-bottom: 0px;">
+                                        <div style="display: inline" class="custom-control custom-checkbox">
+                                            <input style="margin-right: 0px;" type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label style="font-size: 12px;" class="custom-control-label" for="customCheck1">비밀댓글 남기기<img src="images/lock%20(1).png" width="19px" style="margin-bottom: 10px"></label>
+                                        </div>
+                                    </label>
+                                    <div class="reply-input row">
+                                        <div class="col-10">
+                                            <textarea class="form-control reply-space" placeholder="댓글을 남겨주세요."></textarea></div>
+                                        <div class="col">
+                                            <button type="button" class="col btn btn-reply">댓글 등록</button></div>
+                                    </div>
+                                </div>
+                            </div>
                                 </div>
                             </li>
                         </ul>
@@ -210,7 +271,7 @@
             </div>
 
 
-            
+
             <div class=" table" id="headingTwo">
                 <table class="arcodion-list list-group-item-action" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <tr>
@@ -552,8 +613,8 @@
                         </div>
                     </form>
 
-                   
-<!--                   비밀보노 네자리 숫자-->
+
+                    <!--                   비밀보노 네자리 숫자-->
                     <script>
                         $("input:text[numberOnly]").on("keyup", function() {
                             $(this).val($(this).val().replace(/[^0-9]/g, ""));
