@@ -204,9 +204,20 @@ tr {
     align-items: flex-end;
 }
 
+.content-delete-btn{
+    border: 1px solid #3fe4e2;
+    background: #fff;
+    padding: 5px 8px;
+}
+
+.content-delete-btn:hover{
+    background: #f4f5f6;
+}
+
 .content-delete{ 
     position: absolute;
-    display: block;;
+    top: 0px;
+    right: 15px;
 }
 .classification>.row{
     width: 100%;
