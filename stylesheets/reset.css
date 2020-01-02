@@ -22,7 +22,6 @@ header {
     background: #ffffff;
     padding: 20px 0px;
     text-align: center;
-/*    box-shadow: -8px -11px 10px 5px #808080;*/
 }
 .heading {
     width: 400px;
@@ -55,6 +54,33 @@ nav.menu>ul>li > a:hover {
     color: #000000;
     text-decoration: none;
 }
+
+#scrolled{
+    display: inline;
+    padding: 15px 70px;
+    background: #ffffff;
+    box-shadow: -6px -5px 5px 3px #4a4a4a;
+}
+
+#scrolled>img{
+    position: absolute;
+}
+#scrolled>ul{
+    text-align: center;
+    margin: 9px 33vw;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#scrolled>ul>li{
+    display: inline;
+    font-size: 20px;
+}
+
+#scrolled>ul>li > a:hover {
+    color: #000000;
+    text-decoration: none;}
+
 .board {
     margin-top: 60px;
     padding: 0px 25vw;
@@ -490,3 +516,4 @@ textarea.form-control{
     background: #3b7bc4;
     border-color: #3b7bc4;
 }
+
