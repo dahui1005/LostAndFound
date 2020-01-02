@@ -1,6 +1,7 @@
-@font-face {
-    font-family: 'AppleGothic';
-    src: url(Windows/Fonts/a네모의꿈.ttf) format('truetype');
+[type=button]:focus,[type=submit]:focus, [type=text]:focus, select:focus, textarea:focus {
+    box-shadow: none;  
+    outline: none;
+
 }
 
 @font-face{
@@ -309,9 +310,6 @@ textarea.form-control{
     color: #4e4e4e;
     display: inline;
 }
-.reply-delete:before{
-    content: ' | '
-}
 .reply-contents{
     font-size: 14px;
     margin-left: 30px
@@ -321,7 +319,7 @@ textarea.form-control{
     padding-top: 15px;
 }
 .pagination{
-    margin: 100px 0px 70px;
+    margin: 50px 0px 30px;
     justify-content: center;
 }
 .page-item.active .page-link {
