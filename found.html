@@ -182,13 +182,13 @@
                                     </div>
                                     <div class="set">
                                         <!--                                       대댓글달기 인풋 넣었습니당근데 이것도 href와 id연결 달라야하겠습니당-->
-                                        <span class="re-re" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">답글</span> | 
-<!--                                        이거걍짝대기넘-->
+                                        <span class="re-re" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">답글</span> |
+                                        <!--                                        이거걍짝대기넘-->
                                         <span class="reply-delete" onclick="alert('댓글을 삭제합니다.')">삭제</span>
                                     </div>
                                 </div>
                                 <div class="reply-contents">우와~~~ 뭐라는거야?? 그게 뭐에용 ????? 호로로로로릴ㄴㅇ로 호롤ㄴ오링놀ㄴ호로 론ㅇ론론론ㅇ롱ㄴ론ㄹㄴ론ㄹ노론ㄹ놀놀놀</div>
-                                
+
                                 <div class="collapse" id="collapseExample1">
                                     <div class="form-group re-reply-input">
                                         <label style="line-height: 27px; margin-bottom: 0px;">
@@ -246,7 +246,7 @@
                                         </div>
                                     </div>
                                     <div class="reply-contents">우와~~~ 뭐라는거야?? 그게 뭐에용 ?????</div>
-                                    
+
                                 </div>
                             </li>
                             <li class="list-group-item even re-reply row">
@@ -608,27 +608,14 @@
                             <input type="file" id="input_file" class="upload-hidden">
                         </div>
                     </form>
-<!--                   비밀보노 네자리 숫자-->
+                    <!--                   비밀보노 네자리 숫자-->
                     <script>
                         $("input:text[numberOnly]").on("keyup", function() {
                             $(this).val($(this).val().replace(/[^0-9]/g, ""));
                         });
                     </script>
-                    
-<!--                    그..x누르면 폼리셋-->
-                    <script>
-                        $(document).ready(function() {
-                            $("#close").click(function() {
-                                $("form").each(function() {
-                                    if (this.id == "content-form") {
-                                        this.reset();
-                                        $(".upload-display").empty();
-                                    };
-                                });
-                            });
-                        });
-                    </script>
-                    
+
+
 
                 </div>
                 <div class="modal-footer">
@@ -639,6 +626,9 @@
     </div>
 
 
+    <!--                    그..x누르면 폼리셋-->
+    <script src="javascripts/form-reset.js"></script>
+    
     <script src="javascripts/image-upload.js"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
