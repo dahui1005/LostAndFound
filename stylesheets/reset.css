@@ -1,4 +1,4 @@
-[type=button]:focus,[type=submit]:focus, [type=text]:focus, select:focus, texterea:focus {
+[type=button]:focus,[type=submit]:focus, [type=text]:focus, select:focus, textarea:focus {
     box-shadow: none;  
     outline: none;
 
@@ -309,9 +309,6 @@ textarea.form-control{
     font-size: 10px !important;
     color: #4e4e4e;
     display: inline;
-}
-.reply-delete:before{
-    content: ' | '
 }
 .reply-contents{
     font-size: 14px;
