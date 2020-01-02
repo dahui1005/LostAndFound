@@ -1,6 +1,10 @@
-@font-face {
-    font-family: 'AppleGothic';
-    src: url(Windows/Fonts/a네모의꿈.ttf) format('truetype');
+.btn:focus, .form-control:focus{
+    box-shadow: none;
+}
+
+:focus{
+    box-shadow: none;
+    outline: none;
 }
 
 @font-face{
@@ -321,7 +325,7 @@ textarea.form-control{
     padding-top: 15px;
 }
 .pagination{
-    margin: 70px 0px 30px;
+    margin: 50px 0px 30px;
     justify-content: center;
 }
 .page-item.active .page-link {
