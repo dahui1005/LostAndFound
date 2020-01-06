@@ -8,6 +8,13 @@
     color: #989898;
 }
 
+.classification>.row>.col-4{
+    font-weight: bold
+}
+.classification>.row>.col-4>.row, .classification>.row>.col>.row{
+    margin-bottom: 10px;
+}
+
 
 /*모달*/
 .type-place, .ham-password{
