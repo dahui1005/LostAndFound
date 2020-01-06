@@ -236,13 +236,15 @@ tr {
     border: 1px solid #3fe4e2;
     background: #fff;
     padding: 5px 8px;
+        margin-left: 5px;
+
 }
 
 .content-delete-btn:hover{
     background: #f4f5f6;
 }
 
-.content-delete{ 
+.content-change-delete{ 
     position: absolute;
     top: 0px;
     right: 15px;

@@ -135,9 +135,18 @@
 
                                 <div class="col classification">
 
-                                    <!--                                  수레기통 추가함-->
-                                    <div class="content-delete">
-                                        <button class="content-delete-btn btn"><img src="images/delete.png" width="20px"></button></div>
+                                    <!--                                  버튼 추가-->
+                                    <div class="content-change-delete">
+                                       <button class="content-change-btn btn" onclick="change();">찾아감</button>
+                                        <button class="content-delete-btn btn"><img src="images/delete.png" width="20px"></button>
+                                    </div>
+<!--                                    프롬프트 js-->
+                                    <script>
+                                        function change(){
+                                            const inputNum = prompt('보관함의 비밀번호를 입력해주세요.', '번호 입력');
+                                        }
+                                    </script>
+                                    
                                     <div class="row">
                                         <div class="col-3">
                                             <div class="row">습득장소</div>
@@ -598,21 +607,17 @@
 
                         </div>
                         
-<!--                        체크박스 추가, 함번호와 비밀번호에 id추가-->
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheckHam" onClick="checkDisable(this.form)">
-                            <label class="custom-control-label" for="customCheckHam" style="color: #3b7bc4">보관함에 보관중인가요?</label>
-                        </div>
+
 
                         <div class="ham-password line">
                             <div class="ham">
-                                <select name="" id="idham" class="modal-input-ham"  disabled>
+                                <select class="modal-input-ham">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
 
                                 </select> 번 함에 보관중</div>
-                            <input type="text" placeholder="보관함 비밀번호" id="idpwd" class=" modal-input-password" numberOnly maxlength="4" disabled>
+                            <input type="text" placeholder="보관함 비밀번호" class=" modal-input-password" numberOnly maxlength="4">
                         </div>
                         <textarea placeholder="내용을 입력해 주세요." name="" id="" cols="30" rows="10" class="modal-input-contents line"></textarea>
                         <div class="filebox bs3-primary preview-image">
