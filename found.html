@@ -26,10 +26,18 @@
 </head>
 
 <body>
-    <header id="head" class="fixed-top"><img class="heading" src="images/Lost & Found.png" alt="Lost & Found">
+   <!--   헤더에 클래스 fixed-top만 뺌-->
+    <header id="head" class=""><img class="heading" src="images/Lost & Found.png" alt="Lost & Found">
     </header>
     <nav class="menu">
         <ul>
+            <li class="lost"><a href="lost.html">잃어버렸나요?</a></li>
+            <li class="found"><a href="found.html">주인을 찾아요!</a></li>
+        </ul>
+    </nav>
+<!--    내비 추가-->
+    <nav id="scrolled" class="fixed-top"><img src="images/Lost%20&%20Found.png" width="270px" alt="">
+        <ul class="menu">
             <li class="lost"><a href="lost.html">잃어버렸나요?</a></li>
             <li class="found"><a href="found.html">주인을 찾아요!</a></li>
         </ul>
@@ -624,8 +632,10 @@
             </div>
         </div>
     </div>
-
-
+    
+    
+    
+    <script src="javascripts/nav-scroll.js"></script>
     <!--                    그..x누르면 폼리셋-->
     <script src="javascripts/form-reset.js"></script>
     
